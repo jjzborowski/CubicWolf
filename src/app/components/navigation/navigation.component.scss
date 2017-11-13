@@ -1,0 +1,10 @@
+@import 'variables';
+
+.header-nav {
+  &__item {
+    background-color: $header-nav-item-bgc;
+    border: none;
+    color: $header-nav-item-color;
+    padding: 5px 10px;
+  }
+}

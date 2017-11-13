@@ -1,0 +1,26 @@
+@import 'variables';
+
+.projects {
+
+  &-item {
+    background-color: $projects-item-bgc;
+    border: {
+      color: $projects-item-border-color;
+      radius: $projects-item-border-radius;
+      style: solid;
+      width: 2px;
+    };
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    width: 150px;
+
+    &-title {
+
+    }
+
+    &-date {
+
+    }
+  }
+}

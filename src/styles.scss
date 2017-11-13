@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  outline: none;
+}
+
+body {
+  font: {
+    color: $basic-font-color;
+    family: $basic-font-family;
+    size: $basic-font-size;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  width: $container-width;
+}
