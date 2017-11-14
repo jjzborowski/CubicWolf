@@ -1,7 +1,6 @@
 @import 'variables';
 
 .projects {
-
   &-item {
     background-color: $projects-item-bgc;
     border: {
@@ -10,17 +9,25 @@
       style: solid;
       width: 2px;
     };
+    color: $projects-item-font-color;
     display: inline-block;
+    font: {
+      color: $basic-font-color;
+      family: $basic-font-family;
+    };
     margin: 5px;
     padding: 5px 10px;
     width: 150px;
 
     &-title {
-
+      font-size: $projects-item-title-font-size;
     }
 
     &-date {
-
+      font: {
+        size: $projects-item-date-font-size;
+        style: italic;
+      };
     }
   }
 }

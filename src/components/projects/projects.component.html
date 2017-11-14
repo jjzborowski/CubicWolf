@@ -1,0 +1,4 @@
+<a class="projects-item" *ngFor="let project of projects" routerLink="/projects/{{project.id}}">
+  <div class="projects-item-title">{{project.title}}</div>
+  <div class="projects-item-date">{{project.date}}</div>
+</a>

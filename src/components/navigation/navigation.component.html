@@ -1,0 +1,6 @@
+<button
+  class="nav-item"
+  *ngFor="let route of navigation"
+  routerLink="{{ route.path }}">
+  {{ route.name }}
+</button>
