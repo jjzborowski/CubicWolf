@@ -1,0 +1,31 @@
+@import 'variables';
+
+@mixin xs-screen() {
+    @media screen and (max-width: $EXTRASMALL) {
+        @content;
+    }
+}
+
+@mixin s-screen() {
+    @media screen and (max-width: $SMALL) {
+        @content;
+    }
+}
+
+@mixin m-screen() {
+    @media screen and (max-width: $MEDIUM) {
+        @content;
+    }
+}
+
+@mixin l-screen() {
+    @media screen and (max-width: $LARGE) {
+        @content;
+    }
+}
+
+@mixin xl-screen() {
+    @media screen and (min-width: $EXTRALARGE) {
+        @content;
+    }
+}

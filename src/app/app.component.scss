@@ -1,8 +1,17 @@
 @import 'variables';
+@import 'mixins';
 
 header, main, footer {
   margin: 0 auto;
-  width: $container-width;
+  max-width: $container-width;
+    
+    @include xs-screen {
+        
+    }
+    
+    @include l-screen {
+        padding: 10px 15px;
+    }
 }
 
 header {
@@ -10,7 +19,6 @@ header {
   border-bottom: 1px solid #000000;
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
 }
 
 a {
