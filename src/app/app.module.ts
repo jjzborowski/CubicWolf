@@ -1,21 +1,14 @@
-import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-import {RouterModule} from '@angular/router';
-
-import {AppComponent} from './app.component';
-import {COMPONENTS, ROUTES} from 'config/components';
+import {COMPONENTS} from 'config/components';
+import {MODULES} from 'config/modules';
 import {SERVICES} from 'config/services';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ...COMPONENTS
-  ],
-  imports: [
-    BrowserModule,
-    RouterModule.forRoot(ROUTES)
-  ],
+  declarations: [COMPONENTS],
+  imports: [MODULES],
   providers: [SERVICES],
-  bootstrap: [AppComponent]
+  bootstrap: [COMPONENTS.find(obj => {
+    return obj.name === 'AppComponent';
+  })]
 })
 export class AppModule { }

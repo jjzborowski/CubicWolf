@@ -17,9 +17,11 @@
     ],
     "baseUrl": "src",
     "paths": {
+      "app/*": ["app/*"],
       "assets": ["assets"],
       "components/*": ["components/*"],
       "config/*": ["config/*"],
+      "modules/*": ["modules/*"],
       "services/*": ["services/*"]
     }
   }

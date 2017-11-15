@@ -1,29 +1,4 @@
 @import 'variables';
-@import 'mixins';
-
-header, main, footer {
-  margin: 0 auto;
-  max-width: $container-width;
-    
-    @include xs-screen {
-        
-    }
-    
-    @include l-screen {
-        padding: 10px 15px;
-    }
-}
-
-header {
-  align-items: center;
-  border-bottom: 1px solid #000000;
-  display: flex;
-  justify-content: space-between;
-}
-
-a {
-  text-decoration: none;
-}
 
 .logo {
   display: inline-block;
@@ -32,9 +7,4 @@ a {
     height: 100px;
     width: 100px;
   }
-}
-
-.container {
-  margin: 0 auto;
-  width: $container-width;
 }

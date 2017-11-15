@@ -1,3 +1,4 @@
+import {AppComponent} from 'app/app.component';
 import {HomeComponent} from 'components/home/home.component';
 import {AboutComponent} from 'components/about/about.component';
 import {ContactComponent} from 'components/contact/contact.component';
@@ -15,7 +16,8 @@ export const ROUTES: any[] = [
 ];
 
 export const COMPONENTS: any[] = [
-  ...ROUTES.map(route => route.component),
+  AppComponent,
   NavigationComponent,
   RouteBackComponent,
+  ...ROUTES.map(route => route.component),
 ];

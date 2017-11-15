@@ -1,31 +1,31 @@
 @import 'variables';
 
-@mixin xs-screen() {
-    @media screen and (max-width: $EXTRASMALL) {
+@mixin extra-small-screen() {
+    @media screen and (max-width: $extra-small-screen) {
         @content;
     }
 }
 
-@mixin s-screen() {
-    @media screen and (max-width: $SMALL) {
+@mixin small-screen() {
+    @media screen and (max-width: $small-screen) {
         @content;
     }
 }
 
-@mixin m-screen() {
-    @media screen and (max-width: $MEDIUM) {
+@mixin medium-screen() {
+    @media screen and (max-width: $medium-screen) {
         @content;
     }
 }
 
-@mixin l-screen() {
-    @media screen and (max-width: $LARGE) {
+@mixin large-screen() {
+    @media screen and (max-width: $large-screen) {
         @content;
     }
 }
 
-@mixin xl-screen() {
-    @media screen and (min-width: $EXTRALARGE) {
+@mixin extra-large-screen() {
+    @media screen and (min-width: $extra-large-screen) {
         @content;
     }
 }

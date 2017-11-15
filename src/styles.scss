@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 * {
   box-sizing: border-box;
@@ -9,4 +10,82 @@
 }
 
 body {
+  color: $basic-font-color;
+  font: {
+    family: $basic-font-family;
+    size: $basic-font-size;
+  }
+}
+
+header, main, footer {
+  margin: 0 auto;
+  max-width: $max-page-width;
+
+  @include extra-small-screen {
+
+  }
+
+  @include large-screen {
+    padding: {
+      left: 15px;
+      right: 15px;
+    };
+  }
+
+  @include extra-large-screen {
+    padding: {
+      bottom: 10px;
+      top: 10px;
+    }
+  }
+}
+
+header {
+  align-items: center;
+  border-bottom: 4px solid #000000;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: $btn-bgc;
+  border: none;
+  color: $btn-color;
+  cursor: pointer;
+  font-size: $btn-font-size;
+  padding: 10px 15px;
+  text-transform: uppercase;
+
+  &:disabled {
+    background-color: $dark-gray;
+    color: $light-gray;
+    cursor: default;
+  }
+}
+
+label {
+  display: inline-block;
+  width: 160px;
+}
+
+input, textarea {
+  border: {
+    color: $black;
+    style: solid;
+    width: 2px;
+  }
+  max-width: 400px;
+  padding: 5px;
+  width: 100%;
+}
+
+input {
+
+  &[type='text'] {
+
+  }
 }

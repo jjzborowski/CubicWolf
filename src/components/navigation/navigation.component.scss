@@ -1,18 +1,1 @@
 @import 'variables';
-
-.nav {
-  //align-self: flex-end;
-
-  &-item {
-    background-color: $nav-item-bgc;
-    border: none;
-    color: $nav-item-color;
-    font: {
-      family: $basic-font-family;
-      size: $nav-item-font-size;
-    };
-    margin: 0 5px;
-    padding: 10px 15px;
-    text-transform: uppercase;
-  }
-}

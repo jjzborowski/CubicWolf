@@ -1,33 +1,34 @@
 /* BREAKPOINTS */
-$EXTRASMALL: 480px;
-$SMALL: 736px;
-$MEDIUM: 980px;
-$LARGE: 1280px;
-$EXTRALARGE: 1690px;
+$extra-small-screen: 480px;
+$small-screen: 736px;
+$medium-screen: 980px;
+$large-screen: 1280px;
+$extra-large-screen: 1690px;
 
 /* COLORS */
-$WHITE: #ffffff;
-$BLACK: #000000;
-$PURPLE: #820088;
+$white: #ffffff;
+$black: #000000;
+$purple: #820088;
+$light-gray: #cecece;
+$dark-gray: #686868;
 
 /* BASIC */
-$basic-font-color: $BLACK;
+$basic-font-color: $black;
 $basic-font-family: arial;
 $basic-font-size: 16px;
-$container-width: $LARGE;
+$max-page-width: $large-screen;
 
-/* HEADER NAVIGATION */
-$nav-item-bgc: $PURPLE;
-$nav-item-color: $WHITE;
-$nav-item-font-size: 18px;
+/* BUTTON */
+$btn-bgc: $purple;
+$btn-color: $white;
+$btn-font-size: 18px;
 
 /* PROJECTS */
-$projects-item-bgc: $WHITE;
-$projects-item-border-color: $BLACK;
+$projects-item-bgc: $white;
+$projects-item-border-color: $black;
 $projects-item-border-radius: 5px;
 $projects-item-border-style: solid;
 $projects-item-border-width: 2px;
-$projects-item-font-color: $BLACK;
+$projects-item-font-color: $black;
 $projects-item-title-font-size: 20px;
 $projects-item-date-font-size: 14px;
-

@@ -1,6 +1,40 @@
-<fieldset>
-  <legend>Contact</legend>
-  <form>
-
-  </form>
-</fieldset>
+<h1>Contact</h1>
+<form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+  <div class="form-group">
+    <input
+      id="userName"
+      name="userName"
+      type="text"
+      class="form-control"
+      placeholder="Name"
+      required
+      ngModel
+      #userName="ngModel">
+    <div *ngIf="userName.touched && !userName.valid">dfgfd</div>
+  </div>
+  <div class="form-group">
+    <input
+      id="userEmail"
+      name="userEmail"
+      type="userEmail"
+      class="form-control"
+      placeholder="E-mail"
+      required
+      ngModel
+      #userEmail="ngModel">
+    <div *ngIf="userEmail.touched && !userEmail.valid">AWrfe</div>
+  </div>
+  <div class="form-group">
+    <textarea
+      id="userComment"
+      name="userComment"
+      class="form-control"
+      placeholder="Comment"
+      required
+      ngModel
+      #userComment="ngModel">
+    </textarea>
+    <div *ngIf="userComment.touched && !userComment.valid">jkerfbibr</div>
+  </div>
+  <button type="submit" [disabled]="!contactForm.form.valid">Send</button>
+</form>
