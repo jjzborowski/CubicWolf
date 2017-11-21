@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('cubicwolf App', () => {
+describe('CubicWolf App', () => {
   let page: AppPage;
 
   beforeEach(() => {

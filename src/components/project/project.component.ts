@@ -33,6 +33,6 @@ export class ProjectComponent implements OnInit {
 
   getProject() {
     this.projectsService.getProject(this.project_id)
-      .subscribe(project => this.project = project);
+      .subscribe(data => this.project = data);
   }
 }

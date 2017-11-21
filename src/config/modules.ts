@@ -3,6 +3,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {RouterModule} from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 export const MODULES: any[] = [
   BrowserModule,
@@ -10,4 +11,5 @@ export const MODULES: any[] = [
   FormsModule,
   ReactiveFormsModule,
   RouterModule.forRoot(ROUTES),
+  HttpClientModule
 ];

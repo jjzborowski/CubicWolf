@@ -19,7 +19,6 @@ export class ProjectsComponent implements OnInit {
 
   getProjects(): void {
     this.projectsService.getProjects()
-      .subscribe(projects => this.projects = projects);
+      .subscribe(data => this.projects = data['objects']);
   }
-
 }

@@ -4,7 +4,7 @@ export interface NavigationRoute {
 }
 
 export interface Project {
+  date: string;
   id: string;
   title: string;
-  date: string;
 }
