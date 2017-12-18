@@ -1,4 +1,4 @@
-import {ROUTES} from 'config/components';
+import {ROUTES} from 'config/routes';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {RouterModule} from '@angular/router';
