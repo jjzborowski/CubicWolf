@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { HttpErrorResponse } from '@angular/common/http';
 import { API_PROJECTS_URL } from 'config/settings';
 import { Project } from 'config/interfaces';
 import { Observable } from 'rxjs/Observable';
@@ -14,5 +15,10 @@ export class ProjectsService {
 
   getProject(id: number): Observable<Project> {
     return this.http.get<Project>(API_PROJECTS_URL + id + '/');
+  }
+
+  errorHandler(error: HttpErrorResponse): string {
+    console.log(error);
+    return error.statusText;
   }
 }

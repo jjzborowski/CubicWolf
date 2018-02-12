@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpErrorResponse } from '@angular/common/http';
-import { ProjectsService } from 'services/projects/projects.service';
 import { Project } from 'config/interfaces';
+import { ProjectsService } from 'services/projects/projects.service';
 
 @Component({
   selector: 'app-project.project',

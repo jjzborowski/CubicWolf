@@ -6,6 +6,7 @@ export class ErrorsHandlerService {
   constructor() {}
 
   HttpError(error: HttpErrorResponse) {
+    console.log(error);
     switch (error.status) {
       case 404: {
         console.log('There is no project with given id');

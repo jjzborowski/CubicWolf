@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { HttpErrorResponse } from '@angular/common/http';
-import { ProjectsService } from 'services/projects/projects.service';
 import { Project } from 'config/interfaces';
+import { ProjectsService } from 'services/projects/projects.service';
 
 @Component({
   selector: 'app-projects.projects',
@@ -11,8 +11,11 @@ import { Project } from 'config/interfaces';
 })
 export class ProjectsComponent implements OnInit {
   projects: Project[];
+  message: string;
 
-  constructor(private projectsService: ProjectsService) {}
+  constructor(
+    private projectsService: ProjectsService
+  ) {}
 
   ngOnInit() {
     this.getProjects();
@@ -22,14 +25,7 @@ export class ProjectsComponent implements OnInit {
     this.projectsService.getProjects()
       .subscribe(
         data => this.projects = data['objects'],
-        (error: HttpErrorResponse) => {
-          if (error.error instanceof Error) {
-            console.log('An error occurred:', error.error.message);
-          } else {
-            console.log(`Backend returned code ${error.status}, body was: ${error.error}`);
-            console.log(error.error);
-          }
-        }
+        error => this.message = this.projectsService.errorHandler(error)
       );
   }
 }
