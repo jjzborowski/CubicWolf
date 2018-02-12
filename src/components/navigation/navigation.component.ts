@@ -1,6 +1,6 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
-import {NavigationService} from 'services/navigation/navigation.service';
-import {NavigationRoute} from 'config/interfaces';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { NavigationService } from 'services/navigation/navigation.service';
+import { NavigationRoute } from 'config/interfaces';
 
 @Component({
   selector: 'app-navigation',
@@ -21,5 +21,4 @@ export class NavigationComponent implements OnInit {
     this.navigationService.getNavigation()
       .subscribe(navigation => this.navigation = navigation);
   }
-
 }

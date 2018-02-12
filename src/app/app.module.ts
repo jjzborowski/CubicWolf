@@ -1,7 +1,7 @@
-import {NgModule} from '@angular/core';
-import {COMPONENTS} from 'config/components';
-import {MODULES} from 'config/modules';
-import {SERVICES} from 'config/services';
+import { NgModule } from '@angular/core';
+import { COMPONENTS } from 'config/components';
+import { MODULES } from 'config/modules';
+import { SERVICES } from 'config/services';
 
 @NgModule({
   declarations: [COMPONENTS],

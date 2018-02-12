@@ -1,8 +1,8 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
-import {ProjectsService} from 'services/projects/projects.service';
-import {Project} from 'config/interfaces';
-import {HttpErrorResponse} from '@angular/common/http';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { HttpErrorResponse } from '@angular/common/http';
+import { ProjectsService } from 'services/projects/projects.service';
+import { Project } from 'config/interfaces';
 
 @Component({
   selector: 'app-project.project',
@@ -49,6 +49,7 @@ export class ProjectComponent implements OnInit {
               }
             }
           }
-        });
+        }
+      );
   }
 }

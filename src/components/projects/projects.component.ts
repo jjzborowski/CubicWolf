@@ -1,7 +1,7 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
-import {ProjectsService} from 'services/projects/projects.service';
-import {Project} from 'config/interfaces';
-import {HttpErrorResponse} from '@angular/common/http';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { HttpErrorResponse } from '@angular/common/http';
+import { ProjectsService } from 'services/projects/projects.service';
+import { Project } from 'config/interfaces';
 
 @Component({
   selector: 'app-projects.projects',
