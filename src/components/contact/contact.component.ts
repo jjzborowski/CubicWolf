@@ -8,7 +8,6 @@ import { NgForm } from '@angular/forms';
   encapsulation: ViewEncapsulation.None
 })
 export class ContactComponent implements OnInit {
-
   constructor() {}
 
   ngOnInit() {}

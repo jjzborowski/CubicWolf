@@ -1,8 +1,8 @@
-import {Injectable} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
-import {API_PROJECTS_URL} from 'config/settings';
-import {Project} from 'config/interfaces';
-import {Observable} from 'rxjs/Observable';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { API_PROJECTS_URL } from 'config/settings';
+import { Project } from 'config/interfaces';
+import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class ProjectsService {

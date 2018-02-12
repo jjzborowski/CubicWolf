@@ -8,7 +8,6 @@ import { Location } from '@angular/common';
   encapsulation: ViewEncapsulation.None
 })
 export class RouteBackComponent implements OnInit {
-
   constructor(private _location: Location) { }
 
   ngOnInit() { }

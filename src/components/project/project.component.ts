@@ -11,7 +11,6 @@ import { Project } from 'config/interfaces';
   encapsulation: ViewEncapsulation.None
 })
 export class ProjectComponent implements OnInit {
-
   project_id: number;
   project: Project;
   message: string;
