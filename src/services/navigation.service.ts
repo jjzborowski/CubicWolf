@@ -1,6 +1,8 @@
+/*** ANGULAR IMPORTS ***/
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
+/*** APP IMPORTS ***/
 import { NavigationRoute } from 'config/interfaces';
 
 @Injectable()

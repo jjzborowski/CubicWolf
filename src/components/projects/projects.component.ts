@@ -1,7 +1,9 @@
+/*** ANGULAR IMPORTS ***/
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { HttpErrorResponse } from '@angular/common/http';
+/*** APP IMPORTS ***/
 import { Project } from 'config/interfaces';
-import { ProjectsService } from 'services/projects/projects.service';
+import { ProjectsService } from 'services/projects.service';
 
 @Component({
   selector: 'app-projects.projects',
@@ -17,7 +19,7 @@ export class ProjectsComponent implements OnInit {
     private projectsService: ProjectsService
   ) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.getProjects();
   }
 

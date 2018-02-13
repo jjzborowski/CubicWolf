@@ -1,3 +1,6 @@
+/*** ANGULAR IMPORTS ***/
+/*** APP IMPORTS ***/
+
 export class SettingsService {
     private _API_PROJECTS_URL = 'http://localhost:8000/api/projects/';
 

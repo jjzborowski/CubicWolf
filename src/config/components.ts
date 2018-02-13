@@ -1,3 +1,5 @@
+/*** ANGULAR IMPORTS ***/
+/*** APP IMPORTS ***/
 import { AppComponent } from 'app/app.component';
 import { HomeComponent } from 'components/home/home.component';
 import { AboutComponent } from 'components/about/about.component';

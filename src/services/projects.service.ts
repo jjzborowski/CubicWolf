@@ -1,9 +1,11 @@
+/*** ANGULAR IMPORTS ***/
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpErrorResponse } from '@angular/common/http';
 import { Project } from 'config/interfaces';
 import { Observable } from 'rxjs/Observable';
-import { SettingsService } from 'config/settings';
+/*** APP IMPORTS ***/
+import { SettingsService } from 'services/settings.service';
 
 @Injectable()
 export class ProjectsService {

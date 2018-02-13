@@ -1,5 +1,7 @@
+/*** ANGULAR IMPORTS ***/
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Location } from '@angular/common';
+/*** APP IMPORTS ***/
 
 @Component({
   selector: 'app-route-back',
@@ -10,5 +12,5 @@ import { Location } from '@angular/common';
 export class RouteBackComponent implements OnInit {
   constructor(private _location: Location) { }
 
-  ngOnInit() { }
+  ngOnInit(): void { }
 }

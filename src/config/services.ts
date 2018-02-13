@@ -1,11 +1,11 @@
-import { SettingsService } from 'config/settings';
-import { NavigationService } from 'services/navigation/navigation.service';
-import { ProjectsService } from 'services/projects/projects.service';
-import { ErrorsHandlerService } from 'services/errors-handler/errors-handler.service';
+/*** ANGULAR IMPORTS ***/
+/*** APP IMPORTS ***/
+import { SettingsService } from 'services/settings.service';
+import { NavigationService } from 'services/navigation.service';
+import { ProjectsService } from 'services/projects.service';
 
 export const SERVICES: any[] = [
   SettingsService,
   NavigationService,
-  ProjectsService,
-  ErrorsHandlerService
+  ProjectsService
 ];

@@ -1,5 +1,7 @@
+/*** ANGULAR IMPORTS ***/
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { NgForm } from '@angular/forms';
+/*** APP IMPORTS ***/
 
 @Component({
   selector: 'app-contact',
@@ -10,9 +12,9 @@ import { NgForm } from '@angular/forms';
 export class ContactComponent implements OnInit {
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit(): void {}
 
-  onSubmit(form: NgForm) {
+  onSubmit(form: NgForm): void {
     console.log(form.value);
   }
 }

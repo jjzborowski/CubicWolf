@@ -1,4 +1,6 @@
+/*** ANGULAR IMPORTS ***/
 import { NgModule } from '@angular/core';
+/*** APP IMPORTS ***/
 import { COMPONENTS } from 'config/components';
 import { MODULES } from 'config/modules';
 import { SERVICES } from 'config/services';

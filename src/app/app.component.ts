@@ -1,4 +1,6 @@
+/*** ANGULAR IMPORTS ***/
 import { Component } from '@angular/core';
+/*** APP IMPORTS ***/
 
 @Component({
   selector: 'app-root',

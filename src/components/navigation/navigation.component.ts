@@ -1,6 +1,8 @@
+/*** ANGULAR IMPORTS ***/
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+/*** APP IMPORTS ***/
 import { NavigationRoute } from 'config/interfaces';
-import { NavigationService } from 'services/navigation/navigation.service';
+import { NavigationService } from 'services/navigation.service';
 
 @Component({
   selector: 'app-navigation',
@@ -13,7 +15,7 @@ export class NavigationComponent implements OnInit {
 
   constructor(private navigationService: NavigationService) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.getNavigation();
   }
 

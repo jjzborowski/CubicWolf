@@ -1,4 +1,6 @@
+/*** ANGULAR IMPORTS ***/
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+/*** APP IMPORTS ***/
 
 @Component({
   selector: 'app-home',
@@ -9,5 +11,5 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 export class HomeComponent implements OnInit {
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit(): void { }
 }
