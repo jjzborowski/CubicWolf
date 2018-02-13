@@ -6,12 +6,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 /*** APP IMPORTS ***/
 import { RoutingModule } from 'modules/routing.module';
+import { LoadingModule } from 'ngx-loading';
 
 export const MODULES: any[] = [
   BrowserAnimationsModule,
   BrowserModule,
   FormsModule,
   HttpClientModule,
+  LoadingModule,
   ReactiveFormsModule,
   RoutingModule
 ];

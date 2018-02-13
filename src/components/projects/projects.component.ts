@@ -4,6 +4,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 /*** APP IMPORTS ***/
 import { Project } from 'config/interfaces';
 import { ProjectsService } from 'services/projects.service';
+import { SettingsService } from 'services/settings.service';
 
 @Component({
   selector: 'app-projects.projects',
@@ -14,20 +15,31 @@ import { ProjectsService } from 'services/projects.service';
 export class ProjectsComponent implements OnInit {
   projects: Project[];
   message: string;
+  loading: boolean;
 
   constructor(
-    private projectsService: ProjectsService
-  ) {}
+    private projectsService: ProjectsService,
+    private settings: SettingsService
+  ) {
+    this.loading = false;
+  }
 
   ngOnInit(): void {
     this.getProjects();
   }
 
   getProjects(): void {
+    this.loading = true;
     this.projectsService.getProjects()
       .subscribe(
-        data => this.projects = data['objects'],
-        error => this.message = this.projectsService.errorHandler(error)
+        data => {
+          this.projects = data['objects'];
+          this.loading = false;
+        },
+        error => {
+          this.message = this.projectsService.errorHandler(error);
+          this.loading = false;
+        }
       );
   }
 }
