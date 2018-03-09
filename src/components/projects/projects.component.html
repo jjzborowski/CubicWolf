@@ -1,8 +1,19 @@
-<ngx-loading [show]="loading" [config]="settings.LOADER_CONFIG"></ngx-loading>
+<ngx-loading
+  [show]="loading"
+  [config]="settings.LOADER_CONFIG"
+></ngx-loading>
 <div *ngIf="message">
   {{ message }}
 </div>
-<a class="projects-item" *ngFor="let project of projects" routerLink="/projects/{{project.id}}">
-  <div class="projects-item-title">{{project.title}}</div>
-  <div class="projects-item-date">{{project.date}}</div>
+<a
+  *ngFor="let project of projects"
+  class="projects-item"
+  routerLink="/projects/{{project.id}}"
+>
+  <div class="projects-item-title">
+    {{ project.title }}
+  </div>
+  <div class="projects-item-date">
+    {{ project.date }}
+  </div>
 </a>

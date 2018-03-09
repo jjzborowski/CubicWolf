@@ -1,12 +1,15 @@
 /*** ANGULAR IMPORTS ***/
-import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import {
+  FormsModule,
+  ReactiveFormsModule
+} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 /*** APP IMPORTS ***/
-import { RoutingModule } from 'modules/routing.module';
 import { LoadingModule } from 'ngx-loading';
+import { RoutingModule } from 'modules/routing.module';
 
 export const MODULES: any[] = [
   BrowserAnimationsModule,
@@ -15,5 +18,5 @@ export const MODULES: any[] = [
   HttpClientModule,
   LoadingModule,
   ReactiveFormsModule,
-  RoutingModule
+  RoutingModule,
 ];
